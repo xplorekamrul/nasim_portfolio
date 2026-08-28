@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasim Sarder | Senior Executive - Accounts & Publisher Management</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="scripts/gsap.min.js"></script>
+  <script src="scripts/ScrollTrigger.min.js"></script>
+
+  
+</head>
+
+<body>
+
+  <!-- Particle Cursor Canvas -->
+  <canvas id="cursor-canvas"></canvas>
+
+  <!-- Mobile Sidebar Backdrop -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-sidebar" id="mobile-sidebar">
+    <div class="sidebar-header">
+      <a href="#hero" class="nav-brand">Nasim<span>.</span></a>
+      <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="#hero" class="sidebar-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#stats" class="sidebar-nav-link"><i class="fa-solid fa-chart-simple"></i> Overview</a></li>
+      <li><a href="#brands" class="sidebar-nav-link"><i class="fa-solid fa-handshake"></i> Clients</a></li>
+      <li><a href="#experience" class="sidebar-nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills" class="sidebar-nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a></li>
+      <li><a href="#strategic" class="sidebar-nav-link"><i class="fa-solid fa-lightbulb"></i> Insights</a></li>
+      <li><a href="#education" class="sidebar-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#references" class="sidebar-nav-link"><i class="fa-solid fa-certificate"></i> References</a></li>
+      <li><a href="#contact" class="sidebar-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-brand">Nasim<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#stats">Overview</a></li>
+      <li><a href="#brands">Clients</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#strategic">Insights</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </button>
+      <button class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content anim-target">
+
+        <!-- Status Pill Badge -->
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          AVAILABLE FOR NEW OPPORTUNITIES &middot; DHAKA, BD
+        </div>
+
+        <!-- Distinct Name Typography -->
+        <h1 class="hero-name-heading">
+          Nasim <span class="surname">Sarder</span>
+        </h1>
+
+        <!-- Monospace Subtitle Designation -->
+        <div class="hero-sub-role">
+          Senior Executive &mdash; Accounts & Publisher Management
+        </div>
+
+        <p class="hero-desc">
+          Results-driven professional with over 2 years in publisher management, programmatic advertising solutions, and
+          multi-million enterprise brand relations.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </a>
+          <a href="assets/Nasim_Sarder_CV.pdf" download class="btn btn-secondary">
+            <i class="fa-solid fa-file-arrow-down"></i> Download CV
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/nasimsarder" target="_blank" rel="noopener" class="social-icon-btn"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.facebook.com/nasim95" target="_blank" rel="noopener" class="social-icon-btn"
+            aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/sd_nasim95" target="_blank" rel="noopener" class="social-icon-btn"
+            aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:smnasimahmed786@gmail.com" class="social-icon-btn" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Animated Profile Image -->
+      <div class="hero-image-wrapper anim-target">
+        <div class="animated-border-box">
+          <div class="hero-image-inner">
+            <img src="assets/image.png"
+              alt="Nasim Sarder" id="profile-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: STATS BAR -->
+  <section id="stats">
+    <div class="container" style="padding: 1rem 1.5rem;">
+      <div class="stats-grid">
+        <div class="stat-card anim-target">
+          <h3 class="counter" data-target="15">0</h3>
+          <p>BDT 15M+ Ad Volume Managed</p>
+        </div>
+        <div class="stat-card anim-target">
+          <h3 class="counter" data-target="1200">0</h3>
+          <p>1,200+ Payroll Operations</p>
+        </div>
+        <div class="stat-card anim-target">
+          <h3 class="counter" data-target="2">0</h3>
+          <p>Years in Ad Networks</p>
+        </div>
+        <div class="stat-card anim-target">
+          <h3 class="counter" data-target="8">0</h3>
+          <p>Years Corporate Track Record</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: BRAND MARQUEE -->
+  <section id="brands">
+    <div class="section-title-wrap anim-target" style="margin-bottom: 2rem;">
+      <span class="section-subtitle">Trusted Relationships</span>
+      <h2 class="section-title" style="font-size: 1.75rem;">Brands & Ecosystem Partners</h2>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <div class="brand-pill"><i class="fa-solid fa-shield-halved"></i> Grameenphone (GP)</div>
+        <div class="brand-pill"><i class="fa-solid fa-tv"></i> Haier</div>
+        <div class="brand-pill"><i class="fa-solid fa-building-columns"></i> City Bank</div>
+        <div class="brand-pill"><i class="fa-solid fa-bag-shopping"></i> Aarong</div>
+        <div class="brand-pill"><i class="fa-solid fa-ice-cream"></i> Polar Ice Cream</div>
+        <div class="brand-pill"><i class="fa-solid fa-box-open"></i> Marico</div>
+        <!-- Duplicated items for smooth infinite loop -->
+        <div class="brand-pill"><i class="fa-solid fa-shield-halved"></i> Grameenphone (GP)</div>
+        <div class="brand-pill"><i class="fa-solid fa-tv"></i> Haier</div>
+        <div class="brand-pill"><i class="fa-solid fa-building-columns"></i> City Bank</div>
+        <div class="brand-pill"><i class="fa-solid fa-bag-shopping"></i> Aarong</div>
+        <div class="brand-pill"><i class="fa-solid fa-ice-cream"></i> Polar Ice Cream</div>
+        <div class="brand-pill"><i class="fa-solid fa-box-open"></i> Marico</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CAREER TIMELINE -->
+  <section id="experience" class="container">
+    <div class="section-title-wrap anim-target">
+      <span class="section-subtitle">Career Path</span>
+      <h2 class="section-title">Work Experience</h2>
+    </div>
+    <div class="timeline-container">
+
+      <div class="timeline-item anim-target">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Senior Executive - Accounts & Publisher Management</div>
+              <div class="timeline-company">D Sales</div>
+            </div>
+            <span class="timeline-duration">May 2025 - Present</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Nurture strategic relations with major brands (GP, Haier, City Bank) and digital agencies.</li>
+            <li>Oversee end-to-end programmatic static and rich media banner solutions.</li>
+            <li>Analyze publisher traffic data and metrics to increase renewal rates and revenue.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item anim-target">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Executive - Accounts & Admin</div>
+              <div class="timeline-company">Info Station (Pvt) Limited</div>
+            </div>
+            <span class="timeline-duration">Jan 2024 - Mar 2025 (1.3 Yrs)</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Managed digital campaigns exceeding BDT 15 million in volume for top-tier brands.</li>
+            <li>Supervised static banner campaign delivery across display networks to maximize ROI.</li>
+            <li>Collaborated with cross-functional teams to streamline ad operations and reporting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item anim-target">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Account Officer</div>
+              <div class="timeline-company">BLUE FASHION LTD</div>
+            </div>
+            <span class="timeline-duration">Aug 2021 - Dec 2023 (2.5 Yrs)</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Supervised end-to-end bookkeeping, financial reporting, and accounts management.</li>
+            <li>Led payroll operations for 1,200+ employees and handled bank LC documentation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item anim-target">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Executive & Jr. Executive - Accounts & Commercial</div>
+              <div class="timeline-company">RUNWAY LOGISTICS LTD</div>
+            </div>
+            <span class="timeline-duration">Sep 2017 - Jul 2021 (4.1 Yrs)</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Executed client billing, invoicing, payments, and bank Letter of Credit processing.</li>
+            <li>Prepared financial statements and maintained internal compliance standards.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 5: SKILLS & COMPETENCIES -->
+  <section id="skills" class="container">
+    <div class="section-title-wrap anim-target">
+      <span class="section-subtitle">Proficiency</span>
+      <h2 class="section-title">Core Skills & Competencies</h2>
+    </div>
+    <div class="skills-tabs anim-target">
+      <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+      <button class="skill-tab-btn" data-filter="adtech">Ad-Tech & Media</button>
+      <button class="skill-tab-btn" data-filter="accounts">Finance & Accounts</button>
+      <button class="skill-tab-btn" data-filter="tech">Technical & Tools</button>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <!-- Injected by JavaScript -->
+    </div>
+  </section>
+
+  <!-- SECTION 6: STRATEGIC FOCUS -->
+  <section id="strategic" class="container">
+    <div class="section-title-wrap anim-target">
+      <span class="section-subtitle">Focus Areas</span>
+      <h2 class="section-title">Strategic Insights & Interests</h2>
+    </div>
+    <div class="insights-grid">
+      <div class="spotlight-card anim-target">
+        <div class="spotlight-glow"></div>
+        <i class="fa-solid fa-crosshairs"></i>
+        <h4>Campaign Planning & Execution</h4>
+        <p>Dissecting brand briefs, designing structured action plans, and ensuring flawless delivery.</p>
+      </div>
+      <div class="spotlight-card anim-target">
+        <div class="spotlight-glow"></div>
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <h4>Market Trends & Innovation</h4>
+        <p>Tracking shifts in digital media, programmatic advertising, and emerging consumer behaviors.</p>
+      </div>
+      <div class="spotlight-card anim-target">
+        <div class="spotlight-glow"></div>
+        <i class="fa-solid fa-microchip"></i>
+        <h4>Systems & Process Optimization</h4>
+        <p>Exploring new workflow platforms, automation systems, and ad-tech frameworks for efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: EDUCATION & CERTIFICATIONS -->
+  <section id="education" class="container">
+    <div class="section-title-wrap anim-target">
+      <span class="section-subtitle">Academic Credentials</span>
+      <h2 class="section-title">Education & Certifications</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card anim-target">
+        <div class="edu-degree">MBA in Accounting</div>
+        <div class="edu-inst">Govt. Bangabandhu College</div>
+        <div class="edu-meta">
+          <span>Passing Year: 2019</span>
+          <span>CGPA: 3.09</span>
+        </div>
+      </div>
+      <div class="edu-card anim-target">
+        <div class="edu-degree">BBA in Accounting</div>
+        <div class="edu-inst">Govt. Bangabandhu College</div>
+        <div class="edu-meta">
+          <span>Passing Year: 2018</span>
+          <span>CGPA: 2.86</span>
+        </div>
+      </div>
+      <div class="edu-card anim-target">
+        <div class="edu-degree">HSC (Business Studies)</div>
+        <div class="edu-inst">Lal Mia City College</div>
+        <div class="edu-meta">
+          <span>Passing Year: 2013</span>
+          <span>GPA: 4.90</span>
+        </div>
+      </div>
+      <div class="edu-card anim-target">
+        <div class="edu-degree">Computer Office Applications</div>
+        <div class="edu-inst">Nova Computer Prosikkon / BTEB</div>
+        <div class="edu-meta">
+          <span>Certified Course (2016)</span>
+          <span>Govt. Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: PROFESSIONAL ENDORSEMENTS -->
+  <section id="references" class="container">
+    <div class="section-title-wrap anim-target">
+      <span class="section-subtitle">Endorsements</span>
+      <h2 class="section-title">Professional References</h2>
+    </div>
+    <div class="ref-grid">
+      <div class="ref-card anim-target">
+        <div>
+          <div class="ref-name">Injamul Haque</div>
+          <div class="ref-title">Assistant Director</div>
+          <div class="ref-org">Bangladesh Securities & Exchange Commission (BSEC)</div>
+        </div>
+        <div class="ref-links">
+          <a href="tel:01681628030"><i class="fa-solid fa-phone"></i> +880 1681-628030</a>
+          <a href="mailto:injam@sec.gov.bd"><i class="fa-solid fa-envelope"></i> injam@sec.gov.bd</a>
+        </div>
+      </div>
+      <div class="ref-card anim-target">
+        <div>
+          <div class="ref-name">Zahid Hasan</div>
+          <div class="ref-title">Computer Operator</div>
+          <div class="ref-org">Controller General of Accounts (CGA)</div>
+        </div>
+        <div class="ref-links">
+          <a href="tel:01794322996"><i class="fa-solid fa-phone"></i> +880 1794-322996</a>
+          <a href="mailto:jahidhasan1706@gmail.com"><i class="fa-solid fa-envelope"></i> jahidhasan1706@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: DIRECT CONNECT CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title-wrap anim-target">
+        <span class="section-subtitle">Direct Connect</span>
+        <h2 class="section-title">Let's Talk & Collaborate</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Click any card below to open direct chat, call, or
+          email.</p>
+      </div>
+
+      <div class="contact-action-grid">
+        <!-- WhatsApp Direct Chat -->
+        <a href="https://wa.me/8801685161609?text=Hello%20Nasim%20Sarder,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!"
+          target="_blank" rel="noopener" class="contact-action-card anim-target">
+          <div class="contact-action-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3>Chat on WhatsApp</h3>
+          <p>+880 1685-161609</p>
+        </a>
+
+        <!-- Direct Email Opener -->
+        <a href="mailto:smnasimahmed786@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hi%20Nasim,%0D%0A%0D%0AI%20would%20like%20to%20discuss..."
+          class="contact-action-card anim-target">
+          <div class="contact-action-icon">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </div>
+          <h3>Send an Email</h3>
+          <p>smnasimahmed786@gmail.com</p>
+        </a>
+
+        <!-- Direct Call -->
+        <a href="tel:+8801685161609" class="contact-action-card anim-target">
+          <div class="contact-action-icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <h3>Direct Call</h3>
+          <p>Moynarbag, Badda, Dhaka</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      &copy; 2026 Nasim Sarder. All rights reserved.
+    </div>
+  </section>
+
+  <!-- Go to Top Button -->
+  <button id="scroll-top-btn" aria-label="Go To Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Application Script -->
+  <script src="scripts/app.js"></script>
+
+</body>
+
+</html>
